@@ -1,4 +1,9 @@
 import React, { useRef, useState } from "react";
+import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
+import { ReactComponent as BinarySearchIcon } from "assets/binarysearch.svg";
+import Intro from "sections/intro/Intro";
+import "aos/dist/aos.css";
 
 function App() {
   const navbarEl = useRef<null | HTMLElement>(null);
@@ -65,6 +70,61 @@ function App() {
           </div>
         </div>
       </nav>
+      <div className="relative flex justify-center">
+        <div
+          className="fixed bottom-0 left-2/100 lg:left-3/100 w-10
+        hidden md:flex flex-col items-center
+        fade-1000"
+        >
+          <ul className="list-none ">
+            <a href="https://github.com/chandraguptgosavi">
+              <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
+                <FiGithub className="h-5 w-5 my-8" />
+              </li>
+            </a>
+            <a href="https://www.linkedin.com/in/chandragupt-gosavi-5340961b0/">
+              <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
+                <FiLinkedin className="h-5 w-5 my-8" />
+              </li>
+            </a>
+            <a href="https://binarysearch.com/@/chandragupt">
+              <li className="transition duration-500 transform hover:-translate-y-1 hover:scale-105">
+                <BinarySearchIcon className="h-5 w-5 my-8 fill-current hover:text-green" />
+              </li>
+            </a>
+            <a href="https://leetcode.com/chandraguptgosavi/">
+              <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
+                <SiLeetcode className="h-5 w-5 my-8" />
+              </li>
+            </a>
+            <a href="https://twitter.com/chandragupt_g">
+              <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
+                <FiTwitter className="h-5 w-5 my-8" />
+              </li>
+            </a>
+          </ul>
+          <div className="w-px h-24 bg-slate"></div>
+        </div>
+        <div className="w-5/6 max-w-screen-lg">
+          <Intro />
+        </div>
+        <div
+          className="fixed bottom-0 right-2/100 lg:right-3/100 w-10
+        hidden md:flex flex-col items-center
+        fade-1000"
+        >
+          <p
+            className="mb-28
+          hover:text-green
+          transform rotate-90"
+          >
+            <a href="mailto:chandraguptgosavi@gmail.com">
+              chandraguptgosavi@gmail.com
+            </a>
+          </p>
+          <div className="w-px h-24 mt-2 bg-slate"></div>
+        </div>
+      </div>
     </div>
   );
 }
