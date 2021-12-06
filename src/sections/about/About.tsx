@@ -9,7 +9,7 @@ export default function About() {
     {
       element: (
         <p className="mb-4">
-          Hello! Myself Chandragupt and I enjoy creating web applications as
+          Hello! Myself Chandragupt. I enjoy creating web applications as
           well as solving real world problems. My interest in software
           development started when I created a TODO web app. It taught me a lot
           about HTML, CSS and JavaScript!
