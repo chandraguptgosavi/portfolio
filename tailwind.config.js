@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Inter", "Rubik", "sans-serif"],
-        mono: ["Fira Code", "Source Code Pro", "monospace"],
+        sans: ["Montserrat", "sans-serif"],
+        mono: ["Fira Code", "monospace"],
+        cursive: ["Dancing Script", "cursive"],
       },
       transitionProperty: {
         top: "top",
@@ -24,11 +25,11 @@ module.exports = {
       },
       inset: {
         "2/100": "2%",
-        "3/100": "3%"
+        "3/100": "3%",
       },
       height: {
-        "11/12":"91.666667%",
-      }
+        "11/12": "91.666667%",
+      },
     },
     screens: {
       xs: "475px",
