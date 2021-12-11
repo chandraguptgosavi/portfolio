@@ -9,7 +9,7 @@ Deployed URL -> [https://chandragupt.netlify.app/](https://chandragupt.netlify.a
 <br>
 <b>Styling</b>: CSS and Tailwind CSS
 <br>
-<b>Deployment</b>: Github Pages
+<b>Deployment</b>: Netlify
 <br>
 <b>Additional NPM Libraries</b>
   - aos
