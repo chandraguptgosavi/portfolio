@@ -72,16 +72,22 @@ function Menu(props: {
           </li>
         </a>
       </ul>
-      <div
-        className="my-6 md:mx-3 
+      <a
+        href="https://drive.google.com/file/d/1zkb46fHAyLOn7okQ_qUJDogdya13brHd/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          className="my-6 md:mx-3 
           px-4 py-2
           border-2 border-green
           rounded-md
           text-lg md:text-sm text-green
           cursor-pointer"
-      >
-        Resume
-      </div>
+        >
+          Resume
+        </div>
+      </a>
     </>
   );
 }
