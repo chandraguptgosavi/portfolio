@@ -42,14 +42,24 @@ export default function Skills() {
       name: "TailwindCSS",
     },
     {
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+      url: "https://nodejs.org/",
+      name: "Node.js",
+    },
+    {
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+      url: "https://expressjs.com/",
+      name: "Express",
+    },
+    {
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      url: "https://www.mongodb.com/",
+      name: "MongoDB",
+    },
+    {
       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
       url: "https://isocpp.org/",
       name: "C++",
-    },
-    {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      url: "https://www.java.com/",
-      name: "Java",
     },
   ];
 
