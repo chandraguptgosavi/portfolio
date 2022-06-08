@@ -10,6 +10,14 @@ interface Project {
 export default function Projects() {
   const myProjects: Project[] = [
     {
+      title: "Codemore",
+      description:
+        "Online coding platform which helps in enhancing problem solving skills and expanding knowledge of data structures and algorithms.",
+      image: "https://i.imgur.com/EKLtNlM.png",
+      github: "https://github.com/chandraguptgosavi/codemore-frontend",
+      url: "https://codemore.herokuapp.com",
+    },
+    {
       title: "DevMate",
       description:
         "Social media platform to easily discover, connect and chat with the software developers across the world and create awesome products.",
