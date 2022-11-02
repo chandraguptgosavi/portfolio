@@ -22,7 +22,7 @@ function Menu(props: {
         className="list-none
            flex flex-col md:flex-row justify-evenly md:justify-start items-center"
       >
-        <a
+        {/* <a
           href="#about"
           onClick={() => {
             if (props.isDrawerOpen && props.setIsDrawerOpen) {
@@ -33,7 +33,7 @@ function Menu(props: {
           <li className="my-6 md:mx-3 text-lg md:text-sm hover:text-green">
             About
           </li>
-        </a>
+        </a> */}
         <a
           href="#skills"
           onClick={() => {
