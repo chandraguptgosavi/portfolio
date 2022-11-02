@@ -9,20 +9,19 @@ export default function About() {
     {
       element: (
         <p className="mb-4">
-          Hello! Myself Chandragupt. I enjoy creating web applications as
-          well as solving real world problems. My interest in software
-          development started when I created a TODO web app. It taught me a lot
-          about HTML, CSS and JavaScript!
+          Hello! Myself Chandragupt. I’m an aspiring software engineer
+          specializing in building exceptional digital experiences. Currently,
+          I’m focusing on improving myself in all aspects and learning awesome
+          things.
         </p>
       ),
     },
     {
       element: (
         <p className="mb-4">
-          Today, I’ve learnt a lot (still learning) about frontend development
-          and built awesome projects. Also, I have good command over data
-          structures and algorithms as a result I've solved more than 500 coding
-          questions on different coding platforms.
+          I enjoy creating web applications as well as solving real world
+          problems. Also, I have good command over data structures and
+          algorithms and computer fundamentals.
         </p>
       ),
     },

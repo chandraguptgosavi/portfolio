@@ -15,7 +15,7 @@ export default function Projects() {
         "Online coding platform which helps in enhancing problem solving skills and expanding knowledge of data structures and algorithms.",
       image: "https://i.imgur.com/EKLtNlM.png",
       github: "https://github.com/chandraguptgosavi/codemore-frontend",
-      url: "https://codemore.herokuapp.com",
+      url: "https://codemore.deta.dev",
     },
     {
       title: "DevMate",
