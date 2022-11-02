@@ -230,7 +230,7 @@ function App() {
         </div>
         <div className="w-5/6 md:w-3/4 max-w-screen-lg">
           <Intro />
-          <About />
+          {/* <About /> */}
           <Skills />
           <Projects />
           <Connect />
