@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import { FiGithub, FiTwitter, FiLinkedin, FiFile } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
-import { ReactComponent as BinarySearchIcon } from "assets/binarysearch.svg";
-import Intro from "sections/intro/Intro";
+import Intro from "@/sections/intro/Intro";
 import "aos/dist/aos.css";
-import About from "sections/about/About";
-import Skills from "sections/skills/Skills";
-import Projects from "sections/projects/Projects";
-import Connect from "sections/connect/Connect";
+import About from "@/sections/about/About";
+import Skills from "@/sections/skills/Skills";
+import Projects from "@/sections/projects/Projects";
+import Connect from "@/sections/connect/Connect";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
-const AOS = require("aos");
+import AOS from "aos";
+import Experience from "./sections/experience/Experience";
 
 function Menu(props: {
   isDrawerOpen?: Boolean;
@@ -34,6 +34,18 @@ function Menu(props: {
             About
           </li>
         </a> */}
+        <a
+          href="#experience"
+          onClick={() => {
+            if (props.isDrawerOpen && props.setIsDrawerOpen) {
+              props.setIsDrawerOpen(false);
+            }
+          }}
+        >
+          <li className="my-6 md:mx-3 text-lg md:text-sm hover:text-green">
+            Experience
+          </li>
+        </a>
         <a
           href="#skills"
           onClick={() => {
@@ -186,7 +198,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
-                <FiGithub className="h-5 w-5 my-8" />
+                <FiGithub className="h-5 w-5 my-6" />
               </li>
             </a>
             <a
@@ -195,16 +207,16 @@ function App() {
               rel="noopener noreferrer"
             >
               <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
-                <FiLinkedin className="h-5 w-5 my-8" />
+                <FiLinkedin className="h-5 w-5 my-6" />
               </li>
             </a>
             <a
-              href="https://binarysearch.com/@/chandragupt"
+              href="https://drive.google.com/file/d/1zkb46fHAyLOn7okQ_qUJDogdya13brHd/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="transition duration-500 transform hover:-translate-y-1 hover:scale-105">
-                <BinarySearchIcon className="h-5 w-5 my-8 fill-current hover:text-green" />
+              <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
+                <FiFile className="h-5 w-5 my-6 " />
               </li>
             </a>
             <a
@@ -213,7 +225,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
-                <SiLeetcode className="h-5 w-5 my-8" />
+                <SiLeetcode className="h-5 w-5 my-6" />
               </li>
             </a>
             <a
@@ -222,7 +234,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <li className="transition duration-500 hover:text-green transform hover:-translate-y-1 hover:scale-105">
-                <FiTwitter className="h-5 w-5 my-8" />
+                <FiTwitter className="h-5 w-5 my-6" />
               </li>
             </a>
           </ul>
@@ -231,6 +243,7 @@ function App() {
         <div className="w-5/6 md:w-3/4 max-w-screen-lg">
           <Intro />
           {/* <About /> */}
+          <Experience />
           <Skills />
           <Projects />
           <Connect />
@@ -242,6 +255,7 @@ function App() {
         >
           <p
             className="mb-28
+            text-sm
           hover:text-green
           transform rotate-90"
           >
@@ -253,7 +267,7 @@ function App() {
               chandraguptgosavi@gmail.com
             </a>
           </p>
-          <div className="w-px h-24 mt-2 bg-slate"></div>
+          <div className="w-px h-20 mt-2 bg-slate"></div>
         </div>
       </div>
       <aside

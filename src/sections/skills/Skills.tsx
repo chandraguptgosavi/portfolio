@@ -1,70 +1,86 @@
 interface Skill {
   icon: string;
-  url: string,
+  url: string;
   name: string;
 }
 
 export default function Skills() {
   const mySkills: Skill[] = [
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg",
       url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       name: "HTML",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg",
       url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       name: "CSS",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       name: "JavaScript",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
       url: "https://www.typescriptlang.org/",
       name: "TypeScript",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       url: "https://reactjs.org/",
       name: "React",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-      url: "https://redux.js.org/",
-      name: "Redux",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      url: "https://nextjs.org/",
+      name: "Next.js",
     },
+
     {
-      icon: "https://camo.githubusercontent.com/5734d0669fe22ce04a1cb989a156cd32c379875f6bca56d5210c9432824856d9/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667",
-      url: "https://tailwindcss.com/",
-      name: "TailwindCSS",
-    },
-    {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
       url: "https://nodejs.org/",
       name: "Node.js",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
       url: "https://expressjs.com/",
-      name: "Express",
+      name: "Express.js",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-      url: "https://www.mongodb.com/",
-      name: "MongoDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+      url: "https://dotnet.microsoft.com/en-us/apps/aspnet",
+      name: "ASP.NET Core",
     },
     {
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
-      url: "https://isocpp.org/",
-      name: "C++",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+      url: "https://www.postgresql.org/",
+      name: "PostgreSQL",
+    },
+    {
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg",
+      url: "https://www.microsoft.com/en-in/sql-server",
+      name: "SQL Server",
+    },
+    {
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg",
+      url: "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/",
+      name: "C#",
+    },
+    {
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      url: "https://www.python.org/",
+      name: "Python",
+    },
+    {
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+      url: "https://www.docker.com/",
+      name: "Docker",
     },
   ];
 
   return (
-    <section id="skills" className="py-10 md:py-14">
+    <section id="skills" className="py-10 md:py-20">
       <div data-aos="fade-up">
         <div className="mb-12 flex justify-between items-center">
           <p className="mr-2 font-semibold text-lightestSlate text-2xl">
@@ -72,9 +88,10 @@ export default function Skills() {
           </p>
           <div className="ml-2 h-px bg-lightestNavy flex-auto"></div>
         </div>
-        <div className="flex gap-4 xs:gap-14 flex-wrap justify-center">
+        <div className="flex gap-10 xs:gap-14 flex-wrap justify-center">
           {mySkills.map((skill: Skill, index: number) => (
             <div
+              key={index}
               className="w-2/5 xs:w-1/4 md:w-1/6 
                       flex flex-col justify-around items-center"
             >
@@ -85,6 +102,7 @@ export default function Skills() {
                   className="w-12 xs:w-16"
                 />
               </a>
+              <p>{skill.name}</p>
             </div>
           ))}
         </div>

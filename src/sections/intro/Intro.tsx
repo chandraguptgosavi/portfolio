@@ -1,5 +1,3 @@
-
-
 export default function Intro() {
   return (
     <section
@@ -25,13 +23,16 @@ export default function Intro() {
         text-4xl xs:text-5xl md:text-6xl font-semibold
         fade-600"
       >
-        I make life easy through web applications.
+        I always get things done.
       </p>
-      <p className="my-3 md:my-4 max-w-xl fade-800">
-        I’m an aspiring software engineer specializing in building exceptional
-        digital experiences. Currently, I’m focusing on improving myself in all
-        aspects and learning awesome things.
-      </p>
+      <div className="my-3 md:my-4 max-w-xl fade-800">
+        <p>
+        I am a skilled Software Engineer with two years of experience, specializing in Full-Stack Development with a strong problem-solving mindset.
+        </p>
+        <p>
+        Throughout my career, I have tackled challenging problems and consistently delivered the most efficient solutions. In my free time, I enjoy solving complex algorithmic problems.
+        </p>
+      </div>
     </section>
   );
 }

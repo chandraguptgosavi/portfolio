@@ -15,7 +15,7 @@ export default function Projects() {
         "Online coding platform which helps in enhancing problem solving skills and expanding knowledge of data structures and algorithms.",
       image: "https://i.imgur.com/EKLtNlM.png",
       github: "https://github.com/chandraguptgosavi/codemore-frontend",
-      url: "https://codemore.deta.dev",
+      url: "https://codemore-3col.onrender.com/",
     },
     {
       title: "DevMate",
@@ -36,7 +36,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-10 md:py-14">
+    <section id="projects" className="py-10 md:py-20">
       <div className="">
         <div className="mb-12 flex justify-between items-center">
           <p className="mr-2 font-semibold text-lightestSlate text-2xl">
@@ -45,7 +45,7 @@ export default function Projects() {
           <div className="ml-2 h-px bg-lightestNavy flex-auto"></div>
         </div>
         {myProjects.map((project: Project, index: number) => (
-          <div data-aos="fade-up" className="relative mb-16 sm:mb-20 md:mb-28 flex items-center">
+          <div key={index} data-aos="fade-up" className="relative mb-16 sm:mb-20 md:mb-28 flex items-center">
             <div
               className={`absolute top-1/2  ${
                 index % 2 === 0 ? "md:left-0" : "md:right-0"

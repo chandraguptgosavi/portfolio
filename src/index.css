@@ -1,8 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a192f;
+  --color-lightNavy: #112240;
+  --color-lightestNavy: #233554;
+  --color-slate:#8892b0;
+  --color-lightSlate: #a8b2d1;
+  --color-lightestSlate: #ccd6f6;
+  --color-white: #e6f1ff;
+  --color-green: #64ffda;
+
+  --font-sans: "Montserrat", "sans-serif";
+  --font-mono: "Fira Code", "monospace";
+  --font-cursive: "Dancing Script", "cursive";
+}
+
+body {
+  background-color: #0a192f;
+}
 
 @layer utilities {
   .navbar-shadow {
