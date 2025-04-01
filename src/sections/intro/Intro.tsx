@@ -27,7 +27,7 @@ export default function Intro() {
       </p>
       <div className="my-3 md:my-4 max-w-xl fade-800">
         <p>
-        I am a skilled Software Engineer with two years of experience, specializing in Full-Stack Development with a strong problem-solving mindset.
+        I am a skilled Software Engineer with 2 years of experience, specializing in Full-Stack Development with a strong problem-solving mindset.
         </p>
         <p>
         Throughout my career, I have tackled challenging problems and consistently delivered the most efficient solutions. In my free time, I enjoy solving complex algorithmic problems.
