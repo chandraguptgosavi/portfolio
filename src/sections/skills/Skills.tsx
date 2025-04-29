@@ -6,16 +6,16 @@ interface Skill {
 
 export default function Skills() {
   const mySkills: Skill[] = [
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg",
-      url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-      name: "HTML",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg",
-      url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-      name: "CSS",
-    },
+    // {
+    //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg",
+    //   url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    //   name: "HTML",
+    // },
+    // {
+    //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg",
+    //   url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    //   name: "CSS",
+    // },
     {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -71,6 +71,16 @@ export default function Skills() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
       url: "https://www.python.org/",
       name: "Python",
+    },
+    {
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+      url: "https://redis.io/",
+      name: "Redis",
+    },
+    {
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg",
+      url: "https://kafka.apache.org/",
+      name: "Kafka",
     },
     {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
